@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary-500: #FFEB3B;
+  --color-primary-600: #FDD835;
+  --color-primary-900: #F57F17;
+  --color-secondary-500: #009688;
+  --color-secondary-900: #004D40;
+  --font-primary: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/fondo.jpg");
+  background-size: 100%;
+  font-family: var(--font-primary);  
+}
+
+body titulo{    
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.form{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  color: white;
+  background-image: url("../img/background.jpg");
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-login{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  color: white;
+  background-image: url("../img/background.jpg");
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form label{
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 5px;
+  font-weight: 900;    
+}
+
+.form p{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form p span{
+  width: 90%;
+  margin-bottom: 10px;
+}
+.form input {
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.form p select{
+  width: 80%;
+  height: 20px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.form p span a{
+    width: 15%;
+    align-items: flex-end;
+    margin-bottom: 10px;     
+    padding: 0.5rem 0.5rem;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.grid{
+    display: grid;
+    border: 2;
+    width: 80%;    
+    max-width: 600px;
+    margin: 0 auto;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    color: black;
+    background-image: url("../img/background.jpg");
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.grid tbody{
+    background-color: var(--color-primary-500);
+    opacity: 0.8;
+    min-width: 500px;
+}
+
+.grid tbody tr{
+    padding: 1em;
+}
+
+.titulo{
+    margin: 30px;
+    border: 2px solid black;
+    background-image: url("../img/banner2.jpg");    
+    padding-left: 200px; 
+    padding-right: 200px; 
+    border-radius: 20px;
+    color: white;
+}
+
+.btn {
+  min-width: 400px;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 1.5rem 4.5rem;
+  background: var(--color-primary-500);
+  color: var(--color-secondary-900);
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: normal;
+  border: 0;
+  border-radius: 0.4rem;
+  box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.4);
+  appearance: none;
+  cursor: pointer;
+  transition: background 250ms, box-shadow 250ms;
+} 
+  .btn:hover {
+    background: var(--color-primary-900);
+    box-shadow: -2px 2px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  btn:active,
+  btn:focus {
+    outline: none;
+  }
+  
+  btn:active {
+    box-shadow: -4px 4px 24px rgba(0, 0, 0, 0.8);
+  }
+
+
+.btn-green {
+  position: relative;
+  display: inline-block;
+  background: var(--color-secondary-500);
+  color: white;
+  font-family: inherit;
+  font-weight: normal;
+  line-height: normal;
+  border: 0;
+  box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.4);
+  appearance: none;
+  cursor: pointer;
+  transition: background 250ms, box-shadow 250ms;
+}
+.btn-green:hover {
+    background: var(--color-secondary-900);
+    box-shadow: -2px 2px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+.btn-green:active,
+ .btn-green:focus {
+    outline: none;
+  }
+  
+.btn-green:active {
+    box-shadow: -4px 4px 24px rgba(0, 0, 0, 0.8);
+  }
+
+
+.btn .text {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-green .text {
+  position: absolute;
+}
